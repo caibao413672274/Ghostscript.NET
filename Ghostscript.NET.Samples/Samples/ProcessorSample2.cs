@@ -33,15 +33,14 @@ namespace Ghostscript.NET.Samples
     public class ProcessorSample2 : ISample
     {
         public void Start()
-        {
-            string inputFile = @"E:\gss_test\test.pdf";
-            string outputFile = @"E:\gss_test\output\page-%03d.png";
-
+        { 
+            string inputFile = @"D:\BaiBu\9bca219b-55e9-490c-b73c-9055718d428a.pdf";
+            string outputFile = @"D:\BaiBu\page-%03d.png";
             int pageFrom = 1;
             int pageTo = 50;
 
-            GhostscriptVersionInfo gv = GhostscriptVersionInfo.GetLastInstalledVersion();
-
+           // GhostscriptVersionInfo gv = GhostscriptVersionInfo.GetLastInstalledVersion();
+            GhostscriptVersionInfo gv = new GhostscriptVersionInfo(@"E:\projects\Ghostscript.NET\lib\gsdll64.dll");
             using (GhostscriptProcessor processor = new GhostscriptProcessor(gv, true))
             {
                 processor.Processing += new GhostscriptProcessorProcessingEventHandler(processor_Processing);

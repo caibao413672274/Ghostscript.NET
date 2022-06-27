@@ -50,10 +50,12 @@ namespace Ghostscript.NET.Samples
         {
             int desired_dpi = 96;
 
-            string inputPdfPath = @"E:\gss_test\test.pdf";
-            string outputPath = @"E:\gss_test\output\";
+            //string inputPdfPath = @"E:\gss_test\test.pdf";
+            //string outputPath = @"E:\gss_test\output\";
+            string inputPdfPath = @"D:\BaiBu\LocalPdfFiles\2C35EE56-F215-B909-C5FD-547F89B324BF\007.pdf";
+            string outputPath = @"D:\BaiBu\LocalPdfFiles\2C35EE56-F215-B909-C5FD-547F89B324BF\";
 
-            GhostscriptVersionInfo gvi = new GhostscriptVersionInfo(@"C:\Program Files\gs\gs9.53.3\bin\gsdll64.dll");
+            GhostscriptVersionInfo gvi = new GhostscriptVersionInfo(@"C:\Program Files\gs\gs9.56.1\bin\gsdll64.dll");
 
             using (var rasterizer = new GhostscriptRasterizer())
             {

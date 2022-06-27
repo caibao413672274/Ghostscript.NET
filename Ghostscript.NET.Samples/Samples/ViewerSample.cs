@@ -71,7 +71,7 @@ namespace Ghostscript.NET.Samples
             // multiple viewers withing a single process then you need to pass 'true' 
             // value as the last parameter of the method below in order to tell the
             // viewer to load Ghostscript from the memory and not from the disk.
-            _viewer.Open("E:\test\test.pdf",_lastInstalledVersion, false);
+            _viewer.Open(@"D:\BaiBu\LocalPdfFiles\2C35EE56-F215-B909-C5FD-547F89B324BF\84977a95-60ca-4939-bbe3-60eb0b171a7e_cut.pdf", _lastInstalledVersion, false);
         }
 
         // this is the first raised event before PDF page starts rasterizing. 

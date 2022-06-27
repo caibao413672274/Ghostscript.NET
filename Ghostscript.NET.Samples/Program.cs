@@ -45,11 +45,11 @@ namespace Ghostscript.NET.Samples
 
             //sample = new GetInkCoverageSample();
             //sample = new ProcessorSample1();
-            //sample = new ProcessorSample2();
+            sample = new ProcessorSample2();
             //sample = new FindInstalledGhostscriptVersionsSample();
             //sample = new RunMultipleInstancesSample();
             //sample = new ViewerSample();
-            sample = new RasterizerSample1();
+            // sample = new RasterizerSample1();
             //sample = new RasterizerSample2();
             //sample = new AddWatermarkSample();
             //sample = new DeviceUsageSample();
