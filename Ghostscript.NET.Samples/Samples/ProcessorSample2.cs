@@ -34,10 +34,10 @@ namespace Ghostscript.NET.Samples
     {
         public void Start()
         { 
-            string inputFile = @"D:\BaiBu\9bca219b-55e9-490c-b73c-9055718d428a.pdf";
+            string inputFile = @"C:\Users\AOC\Documents\WXWork\1688856754362439\Cache\File\2022-07\1_03《初级会计实务》第3天.pdf";
             string outputFile = @"D:\BaiBu\page-%03d.png";
             int pageFrom = 1;
-            int pageTo = 50;
+            int pageTo = 2;
 
            // GhostscriptVersionInfo gv = GhostscriptVersionInfo.GetLastInstalledVersion();
             GhostscriptVersionInfo gv = new GhostscriptVersionInfo(@"E:\projects\Ghostscript.NET\lib\gsdll64.dll");
